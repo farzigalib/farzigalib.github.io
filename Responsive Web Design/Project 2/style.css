@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+}
+
+#main {
+    content: "";
+    background: fixed;
+    margin: 0;
+    padding: 10px 300px 10px 200px;
+    background-image: url("1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#container{
+    background: linear-gradient(to left, rgb(225, 0, 0, 0.9), rgb(255, 255, 0, 0.7));
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 10px 50px 20px 50px;
+}
+
+h1 {
+    text-align: center;
+    color: cornflowerblue;
+    font-size: 50px;
+    margin-top: 0;
+    font-style: oblique;
+}
+
+p {
+    text-align: center;
+    color: rgb(10, 9, 10);
+    font-size: 30px;
+    margin-top: -3%;
+    font-style: italic;
+}
+
+#survey-form {
+    text-align: start;
+    margin: 0 20px 0 20px;
+    padding: 20px 20px 20px 20px;
+    border: 5px solid rgb(252, 247, 247);
+    border-radius: 25px;
+    background-color: rgb(55, 0, 255, 0.6);
+    font-size: 20px;
+}
+
+#survey-form label {
+    margin: 0;
+    padding: 5px;
+}
+
+#name, #email, #number {
+    margin: 0;
+    padding: 3px;
+    width: 60%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+#number:hover, #name:hover, #email:hover, textarea:hover {
+    background-color: rgb(213, 216, 221);
+}
+
+#dropdown {
+    margin: 0;
+    padding: 3px;
+    width: 61%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+#survey-form fieldset input {
+    margin: 0 10px ;
+    width: 20px;
+    height: 20px;
+}
+
+textarea {
+    margin: 0;
+    padding: 3px;
+    width: 60%;
+    border-radius: 10px;
+}
+
+#submit {
+    margin: 10px 0 0 20px;
+    width: 20%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: forestgreen;
+    font-family: Poppins sans-serif;
+    font-size: 25px;
+    font-style: oblique;
+    border: 3px solid aquamarine;
+}
+
+#submit:hover {
+    background-color: yellow;
+    font-weight: bold;
+    border: 3px solid black;
+}

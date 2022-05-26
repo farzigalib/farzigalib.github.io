@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <main id="main">
+        <div id="container">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Survey on COVID-19 Vaccination</p>
+            
+            <form action="" id="survey-form">
+                <label for="name" id="name-label">Name</label>
+                <br>
+                <input type="name" id="name" placeholder="Enter Your Full Name" required>
+                <br>
+                <br>
+                <label for="email" id="email-label">Email</label>
+                <br>
+                <input type="email" id="email" placeholder="Enter Your Email" required>
+                <br>
+                <br>
+                <label for="number" id="number-label">Age</label>
+                <br>
+                <input type="number" id="number" placeholder="Enter Your Age" required min="18" max="108">
+                <br>
+                <br>
+                <label for="dropdown">Have you received a COVID-19 vaccine?</label>
+                <br>
+                <select name="dropdown" id="dropdown">
+                    <option disabled selected value="">Select Yes/No</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                <br>
+                <br>
+                <fieldset>
+                    <legend>Number of Dose you received till?</legend>
+                    <label for="dose1">
+                        <input type="radio" id="dose1" name="dose1-dose2-notyet" value="dose1" checked>Dose 1
+                    </label>
+                    <br>
+                    <label for="dose2">
+                        <input type="radio" id="dose2" name="dose1-dose2-notyet" value="dose2">Dose 2
+                    </label>
+                    <br>
+                    <label for="notyet">
+                        <input type="radio" id="notyet" name="dose1-dose2-notyet" value="notyet">Not Yet
+                    </label>
+                </fieldset>
+                <br>
+                <label for="dropdown">Which vaccine you received?</label>
+                <br>
+                <select name="dropdown" id="dropdown">
+                    <option disabled selected value>Select vaccine type</option>
+                    <option value="covidshield">CovidShield</option>
+                    <option value="covaxin">Covaxin</option>
+                    <option value="sputnikv">Sputnik V</option>
+                </select>
+                <br>
+                <br>
+                <fieldset>
+                    <legend>What kind of side-effect you faced after Vaccination?</legend>
+                    <label for="fever"><input type="checkbox" id="fever" name="side-effect" value="fever">Fever</label>
+                    <br>
+                    <label for="fatigue"><input type="checkbox" id="fatigue" name="side-effect" value="fatigue">Fatigue</label>
+                    <br>
+                    <label for="headache"><input type="checkbox" id="headache" name="side-effect" value="headache">Headache</label>
+                    <br>
+                    <label for="musclepain"><input type="checkbox" id="musclepain" name="side-effect" value="musclepain">Muscle Pain</label>
+                    <br>
+                    <label for="chills"><input type="checkbox" id="chills" name="side-effect" value="chills">Chills</label>
+                    <br>
+                    <label for="diarrhoea"><input type="checkbox" id="diarrhoea" name="side-effect" value="diarrhoea">Diarrhoea</label>
+                    <br>
+                    <label for="pain"><input type="checkbox" id="pain" name="side-effect" value="pain">Pain at the injection site</label>
+                </fieldset>
+                <br>
+                <label for="textarea">If you have any other side-effect/any suggestions?</label>
+                <br>
+                <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Enter your suggestion here...."></textarea>
+                <br>
+                <input type="submit" name="submit" id="submit">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

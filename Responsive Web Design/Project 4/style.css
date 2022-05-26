@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#main-doc {
+    display: flex;
+}
+
+#navbar {
+    position: fixed;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 100%;
+    margin: 10px;
+    padding: 20px 10px;
+    background-color: rgb(77, 77, 78, 0.5);
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+#navbar header {
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(242, 169, 0);
+}
+
+.nav-list {
+    display: block;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0 5px;
+    margin-bottom: 50px;
+}
+
+.nav-list li {
+    overflow: hidden;
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid #ffffff;
+}
+
+
+.nav-link {
+    font-size: 23px;
+    text-decoration: none;
+    color: black;
+}
+
+.content-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 20px;
+    margin-left: 400px;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px;
+}
+
+.main-section header {
+    font-size: 45px;
+    text-align: center;
+}
+
+.main-section p {
+    font-size: 22px;
+    margin: 8px 0;
+}
+
+.main-section img {
+    width: 720px;
+    align-self: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px;
+}
+
+.main-section code {
+    width: 720px;
+    background-color: rgb(77, 77, 78, 0.5);
+    height: 35px;
+    border-radius: 5px;
+    text-align: center;
+    align-self: center;
+    padding-top: 5px;
+    font-size: 25px;
+}
+
+@media (min-width: 940px) and (max-width: 1200px) {
+    #navbar {
+        width: auto;
+    }
+
+    .content-container {
+        width: auto;
+        margin-left: 380px;
+    }
+}
+
+@media (max-width: 939px) {
+    #main-doc {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    #navbar {
+        position: absolute;
+        width: 100%;
+        height: 300px;
+        padding: 10px;
+        padding-bottom: 0;
+        margin: 5px 5px;
+    }
+
+    #navbar header {
+        text-align: center;
+    }
+
+    .nav-list {
+        margin-bottom: 5px;
+    }
+
+    .nav-list li {
+        text-align: center;
+    }
+
+    .content-container {
+        width: 100%;
+        margin: 330px 0 0 20px;
+    }
+
+    .main-section img {
+        width: auto;
+    }
+
+    .main-section code {
+        width: auto;
+        align-self: auto;
+    }
+}
+
+/* @media (min-width: 790px){
+    #navbar {
+        width: 100%;
+    }
+
+    .content-container {
+        width: 100%;
+    }
+} */

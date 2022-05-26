@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 460px) {
+    h1 {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+}
+
+h2 {
+    font-size: 30px;
+}
+
+a {
+    color: blue;
+}
+
+a:hover {
+    color: green;
+}
+
+#main {
+    margin: 20px 10px 20px 10px;
+    border-radius: 8px;
+    background-color: #eee;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 5px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+@media (max-width: 460px) {
+    #main {
+        margin: 0;
+    }
+}
+
+#img-div {
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+}
+
+#ima-caption {
+    margin: 15px 0 15px 0;
+}
+
+@media (max-width: 460px) {
+    #img-caption {
+        font-size: 14px;
+    }
+}
+
+#headline {
+    margin: 50px 0;
+    text-align: center;
+}
+
+ul {
+    max-width: 550px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+    line-height: 1.6;
+}
+
+li {
+    margin: 16px 0;
+}
+
+blockquote {
+    font-style: italic;
+    max-width: 545px;
+    margin: 0 auto 50px auto;
+    text-align: center;
+}

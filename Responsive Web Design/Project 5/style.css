@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+#navbar {
+    content: "";
+    position: fixed;
+    display: flex;
+    background-color: #be3144;
+    justify-content: space-between;
+    box-shadow: 10px 0 20px #374d66;
+    width: 100%;
+}
+
+.logo img {
+    width: 200px;
+    height: 80px;
+    margin: 20px 0 20px 50px;
+}
+
+.nav-list {
+    display: flex;
+    margin-top: 40px;
+}
+
+.nav-list li {
+    list-style: none;
+}
+
+#nav-link {
+    margin: 20px;
+    padding: 10px;
+    font-size: 30px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#nav-link:hover {
+    border: 2px solid rgb(242, 169, 0);
+    border-radius: 5px;
+}
+
+h1, p, h2 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+#welcome-section {
+    background: url(overview-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin-top: 150px;
+}
+
+#welcome-section h1{
+    margin-top: 390px;
+    color: #ffffff;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 40px;
+}
+
+#welcome-section p{
+    color: rgb(242, 169, 0);
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+#projects {
+    background-color: #45567d;
+}
+
+#projects h2 {
+    margin: 25px 0;
+    color: #ffffff;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.project-grid {
+    height: 110vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: center;
+    row-gap: 0;
+}
+
+.project {
+    width: 320px;
+    height: 340px;
+    margin: 0 30px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #319dbe;
+    background-color: #39393bfd;
+    text-decoration: none;
+    transition: border 0.4s ease-out;
+}
+
+.project:hover{
+    border: 3px solid rgb(242, 169, 0);
+}
+
+.project img {
+    width: 300px;
+    height: 280px;
+    padding: 10px;
+    background-color: darkgray;
+    border-radius: 5px 5px 0 0;
+}
+
+.project-tile {
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.code {
+    color: #39393bfd;
+    transition: color 0.5s ease-out;
+}
+
+.project:hover .code {
+    color: rgb(242, 169, 0);
+}
+
+.project4 {
+    grid-area: 2/2/3/3;
+}
+
+#about {
+    background-color: #303841;
+}
+
+.about-heading {
+    margin: 25px 0;
+    color: #49e2af;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+.about-heading p {
+    font-size: 20px;
+    color: #669eac;
+}
+
+.link-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+}
+
+#profile-link {
+    margin: 20px 40px 20px 40px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.fab {
+    margin: 0 20px;
+}
+
+.fab:hover {
+    margin-top: 20px;
+}
+
+hr {
+    background-color: #be3144;
+    height: 3px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #303841;
+}
+
+.footer p {
+    margin: 15px 0;
+    color: #ffffff;
+}
+
+.footer p a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.fa-free-code-camp {
+    margin: 0;
+}
+
+@media (max-width: 1100px) {
+    .project-grid {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+
+    .link-grid {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+}
+
+@media (max-width: 769px) {
+    .logo img {
+        width: 120px;
+        height: 50px;
+        margin: 20px 0 20px 20px;
+    }
+
+    #nav-link {
+        margin: 10px;
+        padding: 5px;
+        font-size: 15px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .project-grid {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .link-grid {
+        grid-template-columns: auto;
+    }
+}
