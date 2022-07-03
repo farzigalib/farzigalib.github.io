@@ -2,50 +2,188 @@
 @import url("https://fonts.google.com/specimen/Sen");
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(4, 59, 59);
-    font-family: 'Inter', 'Sen', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  position: relative;
+  background-color: rgb(4, 59, 59);
+  font-family: "Inter", "Sen", sans-serif;
+  padding: 2rem 0;
 }
 
 .logo {
-    text-align: start;
-    margin: 50px 200px;
+  text-align: start;
+  padding: 0 200px;
 }
 
 h1 {
-    font-size: 130px;
-    color: aqua;
-    margin: 0;
-    margin-top: 50px;
+  font-size: 8rem;
+  letter-spacing: 0.5rem;
+  color: aqua;
+  margin: 0;
+  margin-top: 35px;
 }
 
 p {
-    font-size: 30px;
-    margin: 10px 0;
-    margin-right: 500px;
-    color: aliceblue;
+  font-size: 1.8rem;
+  margin: 1rem 0;
+  margin-right: 500px;
+  color: beige;
 }
 
 button {
-    width: 300px;
-    height: 70px;
-    margin-top: 10px;
-    background-color: aqua;
-    border-radius: 10px;
-    font-size: 25px;
-    font-weight: bolder;
-    color: rgb(4, 59, 59);
+  width: 300px;
+  height: 70px;
+  margin-top: 1.5rem;
+  background-color: aqua;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  color: rgb(4, 59, 59);
+  cursor: pointer;
+}
+
+.twitter-section {
+  display: flex;
+  margin-top: 3rem;
 }
 
 a {
-    text-decoration: none;
-    font-size: 20px;
-    color: aliceblue;
-    
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: aliceblue;
+  align-self: center;
+  margin-left: 1rem;
 }
 
-img {
-    margin-top: 30px;
-    margin-right: 20px;
+#img1,
+#img2,
+#img3,
+#img4,
+#img5 {
+  position: absolute;
+}
+
+#img1 {
+  top: 40%;
+  right: 250px;
+}
+
+#img2 {
+  top: 2rem;
+  right: 250px;
+}
+
+#img3 {
+  top: 6rem;
+  left: 80px;
+}
+
+#img4 {
+  bottom: 30px;
+  right: 280px;
+}
+
+#img5 {
+  top: 4.3rem;
+  right: 510px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .logo {
+    padding: 0 0 0 30px;
+  }
+
+  h1 {
+    font-size: 5rem;
+    margin-top: 14rem;
+  }
+
+  p {
+    margin: 2rem 0;
+    margin-right: 150px;
+  }
+
+  .twitter-section {
+    margin: 12rem 0 2rem 0;
+  }
+
+  #img1 {
+    top: 45%;
+    right: 40px;
+  }
+
+  #img2 {
+    right: 40px;
+  }
+
+  #img3 {
+    top: 6rem;
+    left: 40px;
+  }
+
+  #img4 {
+    bottom: 2rem;
+    right: 40px;
+  }
+
+  #img5 {
+    top: 12rem;
+    right: 12rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-container {
+    padding: 1rem 0;
+  }
+
+  .logo {
+    padding: 0 0 0 15px;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-top: 12rem;
+    letter-spacing: 0;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin-right: 50px;
+  }
+
+  button {
+    width: 280px;
+    font-size: 1.3rem;
+  }
+
+  .twitter-section {
+    margin: 12rem 0 1rem 0;
+  }
+
+  #img1 {
+    visibility: hidden;
+  }
+
+  #img2 {
+    right: 20px;
+  }
+
+  #img3 {
+    top: 6rem;
+    left: 20px;
+  }
+
+  #img4 {
+    bottom: 5rem;
+    right: 20px;
+    width: 11rem;
+  }
+
+  #img5 {
+    visibility: hidden;
+  }
 }
