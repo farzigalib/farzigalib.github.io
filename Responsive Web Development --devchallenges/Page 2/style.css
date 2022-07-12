@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=PT+Serif:ital,wght@0,400;1,700&family=Poppins:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=PT+Serif:ital,wght@0,400;1,700&family=Poppins:wght@400;600&display=swap");
 
 * {
   box-sizing: border-box;
@@ -29,7 +29,7 @@ body::-webkit-scrollbar {
 
 .header-left-heading {
   font-size: 2.3rem;
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
   font-weight: 700;
 }
 
@@ -39,14 +39,14 @@ body::-webkit-scrollbar {
 
 .header-right-heading {
   font-size: 1.2rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 .header-right-para {
   font-size: 1rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
 
@@ -59,9 +59,13 @@ body::-webkit-scrollbar {
   justify-content: space-between;
 }
 
-.box2, .box5 {
+.content-container > div:nth-child(3n + 2) {
   margin: 4rem 4rem 0 4rem;
 }
+
+/* .box2, .box5 {
+  margin: 4rem 4rem 0 4rem;
+} */
 
 .img-with-position {
   display: flex;
@@ -74,15 +78,15 @@ img {
 
 .position-text {
   writing-mode: vertical-rl;
-  font-size: .9rem;
-  font-family: 'PT Serif', serif;
+  font-size: 0.9rem;
+  font-family: "PT Serif", serif;
   font-weight: 400;
   margin: 0 10px;
 }
 
 .name-text {
   font-size: 1.1rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   margin: 15px 0;
 }
@@ -90,25 +94,24 @@ img {
 /* Footer Section */
 
 .footer {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
-  color: #A9A9A9;
+  color: #a9a9a9;
   text-align: center;
 }
 
-
 /* Responsive Style */
-@media(max-width: 1080px) {
+@media (max-width: 1080px) {
   .main-container {
-    padding: 2rem .7rem 0 .7rem;
+    padding: 2rem 0.7rem 0 0.7rem;
   }
-  
+
   /* Header Section */
-  
+
   .header-container {
     flex-direction: column;
   }
-  
+
   .header-left {
     flex: 100%;
   }
@@ -116,18 +119,18 @@ img {
   .header-left-heading {
     font-size: 2rem;
   }
-  
+
   .header-right {
     flex: 100%;
   }
-  
+
   .header-right-heading {
-    font-size: .9rem;
+    font-size: 0.9rem;
     margin-top: 0;
   }
 
   .header-right-para {
-    font-size: .8rem;
+    font-size: 0.8rem;
     margin-top: 10px;
   }
 
@@ -137,24 +140,35 @@ img {
     margin-top: 2rem;
   }
 
+  .content-container > div:nth-child(3n+2) {
+    margin: 0;
+  }
+
+  .content-container > div:nth-child(even) {
+    margin-top: 3rem;
+  }
+
   img {
     width: 139px;
     height: 209px;
   }
 
-  .box2, .box5 {
+  /* .box2,
+  .box5 {
     margin: 0;
   }
 
-  .box2, .box4, .box6 {
+  .box2,
+  .box4,
+  .box6 {
     margin-top: 3rem;
-  }
+  } */
 
   .position-text {
-    font-size: .7rem;
+    font-size: 0.7rem;
     margin: 0 6px;
   }
-  
+
   .name-text {
     font-size: 0.9rem;
     margin: 10px 0;
