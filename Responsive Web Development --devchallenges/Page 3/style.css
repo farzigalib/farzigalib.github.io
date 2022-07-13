@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap");
+
+:root {
+  --ff-1: "Crimson Pro", serif;
+  --ff-2: "Lora", serif;
+  --ff-3: "Montserrat", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.main-container {
+  background-color: #181719;
+  padding: 2rem 4rem .4rem 4rem;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container > p {
+  border: 1px solid #ffffff;
+  padding: 8px;
+  font-size: 1.2rem;
+  font-family: var(--ff-1);
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.tabs {
+  display: flex;
+  list-style: none;
+}
+
+.tab {
+  margin: 0 4rem;
+}
+
+.lasttab {
+  margin-right: 0;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-family: var(--ff-3);
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.active {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 8px;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem 0 10rem 0;
+}
+
+.right-container {
+  width: 40%;
+  align-self: center;
+}
+
+.right-container > h1 {
+  font-size: 3rem;
+  font-family: var(--ff-2);
+  font-weight: 500;
+}
+
+.discription {
+  margin-top: 2.7rem;
+  font-size: 1.5rem;
+  font-family: var(--ff-3);
+  font-weight: 400;
+}
+
+.read-more {
+  display: flex;
+  font-weight: 700;
+}
+
+.read-more > p {
+  margin: 0 14px 0 0;
+}
+
+.read-more > i {
+  align-self: center;
+}
+
+.left-container {
+  width: 60%;
+  align-items: center;
+}
+
+.img-container {
+  position: relative;
+}
+
+.img-container > img {
+  width: 53rem;
+  padding: 2rem;
+}
+
+.tweet-container {
+  background-color: #181719;
+  padding: 1rem 1rem 1.4rem 1.3rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 50%;
+  position: absolute;
+  top: 81%;
+  right: 6rem;
+}
+
+.tweet-header {
+  display: flex;
+  align-items: center;
+}
+
+.tweet-header > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.user {
+  margin-left: 1.2rem;
+  font-family: var(--ff-3);
+  font-weight: 500;
+}
+
+.user-name {
+  margin: 0 0 8px 0;
+  font-size: 1rem;
+}
+
+.position {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.tweet {
+  font-size: 1.8rem;
+  font-family: var(--ff-2);
+  font-weight: 700;
+}
+
+/* Footer Section */
+
+.footer {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #a9a9a9;
+  text-align: center;
+}
+
+.footer > p {
+    margin: 0;
+}
