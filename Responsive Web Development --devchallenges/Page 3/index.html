@@ -1,69 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Interior Consultant</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="main-container">
-        <div class="header-container">
-            <div class="logo-container">
-                <p>This Interior</p>
-            </div>
-            <div class="tab-container">
-                <ul class="tabs">
-                    <li class="tab active"><a href="#">Home</a></li>
-                    <li class="tab"><a href="#">Collection</a></li>
-                    <li class="tab"><a href="#">About</a></li>
-                    <li class="tab lasttab"><a href="#">Contact</a></li>
-                </ul>
-            </div>
+      <div class="header-container">
+        <div class="logo-container">
+          <p>This Interior</p>
         </div>
+        <ul>
+          <div onclick="openMenu()"><i class="material-icons menu" id="menuBtn"> menu </i></div>
+          <div onclick="closeMenu()"><i class='material-icons close' id="closeBtn"> close </i></div>
+          <div class="tab-container" id="tab-view">
+            <ul class="tabs">
+              <li class="tab active"><a href="#">Home</a></li>
+              <li class="tab"><a href="#">Collection</a></li>
+              <li class="tab"><a href="#">About</a></li>
+              <li class="tab lasttab"><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </ul>
+      </div>
 
-        <div class="content-container">
-            <div class="right-container">
-                <h1>Modern interior</h1>
-                <p class="discription">
-                    A full-Service residential & <br />
-                    commercial interior design and <br />
-                    staging company offering <br />
-                    professional organizing & <br />
-                    eco-services.
-                </p>
-                <a href="#" class="read-more">
-                    <p>Read more</p>
-                    <i class="material-icons"> arrow_right_alt </i>
-                </a>
-            </div>
-            <div class="left-container">
-                <div class="img-container">
-                    <img src="./assets/photo1.png" alt="bigImg" />
-                    <div class="tweet-container">
-                        <div class="tweet-header">
-                            <img src="./assets/photo2.png" alt="userImg" />
-                            <div class="user">
-                                <p class="user-name">Aliza Webber</p>
-                                <p class="position">Interior designer</p>
-                            </div>
-                        </div>
-                        <h1 class="tweet">
-                            Designed in 2020 by <br />
-                            Aliza Webber
-                        </h1>
-                    </div>
+      <div class="content-container">
+        <div class="left-container">
+          <h1>Modern interior</h1>
+          <p class="discription">
+            A full-Service residential & <br />
+            commercial interior design and <br />
+            staging company offering <br />
+            professional organizing & <br />
+            eco-services.
+          </p>
+          <a href="#" class="read-more">
+            <p>Read more</p>
+            <i class="material-icons"> arrow_right_alt </i>
+          </a>
+        </div>
+        <div class="right-container">
+          <div class="img-container">
+            <img src="./assets/photo1.png" alt="bigImg" />
+            <div class="tweet-container">
+              <div class="tweet-header">
+                <img src="./assets/photo2.png" alt="userImg" />
+                <div class="user">
+                  <p class="user-name">Aliza Webber</p>
+                  <p class="position">Interior designer</p>
                 </div>
+              </div>
+              <h1 class="tweet">
+                Designed in 2020 by <br />
+                Aliza Webber
+              </h1>
             </div>
+          </div>
         </div>
-        <div class="footer">
-            <p>created by farzigalib - devChallenges.io</p>
-        </div>
+      </div>
+      <div class="footer">
+        <p>created by farzigalib - devChallenges.io</p>
+      </div>
     </div>
-</body>
 
+    <script src="main.js"></script>
+  </body>
 </html>

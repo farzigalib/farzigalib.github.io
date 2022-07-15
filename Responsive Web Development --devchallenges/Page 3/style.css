@@ -22,7 +22,7 @@ body::-webkit-scrollbar {
 
 .main-container {
   background-color: #181719;
-  padding: 2rem 4rem .4rem 4rem;
+  padding: 2rem 4rem 0.4rem 4rem;
 }
 
 .header-container {
@@ -38,6 +38,11 @@ body::-webkit-scrollbar {
   font-family: var(--ff-1);
   font-weight: 200;
   text-transform: uppercase;
+}
+
+.menu,
+.close {
+  display: none;
 }
 
 .tabs {
@@ -72,12 +77,12 @@ a {
   margin: 4rem 0 10rem 0;
 }
 
-.right-container {
+.left-container {
   width: 40%;
   align-self: center;
 }
 
-.right-container > h1 {
+.left-container > h1 {
   font-size: 3rem;
   font-family: var(--ff-2);
   font-weight: 500;
@@ -103,7 +108,7 @@ a {
   align-self: center;
 }
 
-.left-container {
+.right-container {
   width: 60%;
   align-items: center;
 }
@@ -113,7 +118,7 @@ a {
 }
 
 .img-container > img {
-  width: 53rem;
+  width: 100%;
   padding: 2rem;
 }
 
@@ -152,6 +157,7 @@ a {
 .position {
   margin: 0;
   font-size: 0.8rem;
+  color: #828282;
 }
 
 .tweet {
@@ -170,5 +176,98 @@ a {
 }
 
 .footer > p {
-    margin: 0;
+  margin: 0;
+}
+
+/* need to check of both in one devices {when I open it on mobile it will work fine but something change in desktop} */
+
+/* Responsive css */
+@media (max-width: 1070px) {
+  .main-container {
+    background-color: #181719;
+    padding: 1.2rem 0.8rem;
+  }
+
+  .menu {
+    display: block;
+    font-size: 2rem;
+  }
+
+  .close {
+    font-size: 2rem;
+  }
+
+  .tab-container {
+    display: none;
+    background-color: #181719;
+    position: absolute;
+    text-align: center;
+    right: 0;
+    left: 0;
+    top: 7rem;
+    height: 100vh;
+    z-index: 1;
+  }
+
+  .tabs {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .tab {
+    margin: 2rem auto;
+  }
+
+  .content-container {
+    flex-direction: column;
+    justify-content: start;
+    margin: 1.5rem 0 10rem 0;
+  }
+
+  .left-container {
+    width: 100%;
+    align-self: flex-start;
+  }
+
+  .left-container > h1 {
+    font-size: 2.5rem;
+  }
+
+  .discription {
+    margin-top: 1.6rem;
+    font-size: 1.3rem;
+  }
+
+  .right-container {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .img-container > img {
+    padding: 2rem 0;
+  }
+
+  .tweet-container {
+    padding: 1rem 1rem 1.4rem 1.5rem;
+    width: 85%;
+    top: 75%;
+    right: 0.7rem;
+  }
+
+  .tweet {
+    font-size: 1.3rem;
+  }
+
+  .tweet-header > img {
+    width: 37px;
+    height: 37px;
+  }
+
+  .user-name {
+    font-size: 0.8rem;
+  }
+
+  .position {
+    font-size: 0.7rem;
+  }
 }
