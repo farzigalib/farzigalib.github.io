@@ -144,7 +144,42 @@ input {
 }
 
 .instruction-container {
-    margin-top: 1.7rem;
+  margin-top: 1.7rem;
+  width: 60%;
+}
+
+.num-with-para {
+  display: flex;
+  margin-bottom: 2.3rem;
+}
+
+.num-only {
+  background: #f2994a;
+  border-radius: 6px;
+  font-size: 1.4rem;
+  padding: 0 0.8rem;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  font-family: var(--ff-2);
+  height: 2.2rem;
+}
+
+.para-only {
+  align-self: center;
+  margin-left: 1rem;
+  font-size: 1rem;
+  font-family: var(--ff-1);
+  font-weight: 400;
+}
+
+.src {
+  text-decoration: none;
+  color: #bdbdbd;
+  font-family: var(--ff-1);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 /* Responsive css */
@@ -231,5 +266,13 @@ input {
 
   .time-container-box > div:last-child {
     padding-bottom: 1.7rem;
+  }
+
+  .instruction-container {
+    width: 100%;
+  }
+
+  .src {
+    font-size: 0.9rem;
   }
 }
