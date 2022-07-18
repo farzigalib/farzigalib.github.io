@@ -19,7 +19,7 @@ body::-webkit-scrollbar {
 }
 
 .main-container {
-  margin: 3rem 14rem;
+  margin: 3rem 14rem 0 14rem;
 }
 
 .main-heading {
@@ -189,6 +189,7 @@ input {
   font-size: 1rem;
   color: #a9a9a9;
   text-align: center;
+  margin-top: 3rem;
 }
 
 .footer > p {
@@ -198,7 +199,7 @@ input {
 /* Responsive css */
 @media (max-width: 1070px) {
   .main-container {
-    margin: 2rem 0.8rem;
+    margin: 2rem 0.8rem 0 0.8rem;
   }
 
   .main-heading {
