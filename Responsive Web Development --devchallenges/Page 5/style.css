@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+:root {
+  --ff-1: "Montserrat", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-1);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.main-container {
+  padding: 3.8rem 14.8rem 0.7rem 14.8rem;
+}
+
+.header-container {
+  text-align: center;
+}
+
+.profile-img {
+  width: 9.8rem;
+  height: 9.8rem;
+  border-radius: 1rem;
+}
+
+.user-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4e5150;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.user-location {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #a9a9a9;
+}
+
+.user-count {
+  display: flex;
+  justify-content: center;
+}
+
+.count-box {
+  width: 7rem;
+  height: 4.4rem;
+  background-color: #e5e5e5;
+  border-radius: 12px;
+  margin: 1.5rem;
+  padding-top: 1rem;
+}
+
+.count-num {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #4e5150;
+  margin-bottom: .2rem;
+}
+
+.count-text {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #bdbdbd;
+}
+
+.photo1 {
+  grid-area: photo1;
+  width: 100%;
+  height: 18.7rem;
+  border-radius: 0.8rem;
+}
+
+.photo2 {
+  grid-area: photo2;
+  height: 18.7rem;
+  width: 100%;
+  border-radius: 0.8rem;
+}
+
+.photo3 {
+  grid-area: photo3;
+  height: 18.7rem;
+  width: 100%;
+  border-radius: 0.8rem;
+}
+
+.photo4 {
+  grid-area: photo4;
+  width: 100%;
+  height: 39.4rem;
+  border-radius: 0.8rem;
+}
+
+.photo5 {
+  grid-area: photo5;
+  width: 100%;
+  height: 18.7rem;
+  border-radius: 0.8rem;
+}
+
+.photo6 {
+  grid-area: photo6;
+  width: 100%;
+  height: 18.7rem;
+  border-radius: 0.8rem;
+}
+
+.content-container {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-areas:
+    "photo1 photo2 photo2"
+    "photo3 photo3 photo4"
+    "photo5 photo6 photo4";
+  gap: 1.5rem;
+}
+
+/* Footer Section */
+
+.footer {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #a9a9a9;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.footer > p {
+  margin: 0;
+}
+
+/* Responsive css */
+@media (max-width: 1070px) {
+  .main-container {
+    padding: 1.6rem 0.7rem 0.7rem 0.7rem;
+  }
+
+  .profile-img {
+    width: 6.3rem;
+    height: 6.3rem;
+  }
+
+  .user-name {
+    font-size: 0.9rem;
+  }
+
+  .user-location {
+    font-size: 0.6rem;
+  }
+
+  .count-box {
+    margin: 0.8rem;
+    height: 3.8rem;
+  }
+
+  .count-num {
+    font-size: 0.8rem;
+  }
+
+  .count-text {
+    font-size: 0.8rem;
+  }
+
+  .photo1 {
+    height: 7.7rem;
+  }
+
+  .photo2 {
+    height: 7.7rem;
+  }
+
+  .photo3 {
+    height: 7.7rem;
+  }
+
+  .photo4 {
+    height: 16.4rem;
+  }
+
+  .photo5 {
+    height: 7.7rem;
+  }
+
+  .photo6 {
+    height: 7.7rem;
+  }
+
+  .content-container {
+    margin-top: 1rem;
+    gap: 0.8rem;
+  }
+}
