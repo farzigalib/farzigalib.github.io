@@ -1,0 +1,378 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap");
+
+:root {
+  --ff-1: "Montserrat", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.main-container {
+  margin: 4rem 14rem .8rem 15rem;
+}
+
+.heading {
+  font-family: var(--ff-1);
+  font-weight: 600;
+  font-size: 2.3rem;
+  color: #4e5150;
+}
+
+.content-container {
+  margin-top: 3.1rem;
+  display: flex;
+}
+
+.left-container {
+  flex: 50%;
+}
+
+.left-heading {
+  font-family: var(--ff-1);
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333333;
+}
+
+.input-container {
+  margin-top: 0.9rem;
+}
+
+.input-field {
+  margin-bottom: 1.2rem;
+}
+
+label {
+  font-family: var(--ff-1);
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #4f4f4f;
+}
+
+.input-with-icon {
+  border: 1px solid #828282;
+  padding: 0.9rem 0.8rem;
+  border-radius: 0.8rem;
+  margin-top: 0.4rem;
+  display: flex;
+}
+
+.icon {
+  color: #828282;
+}
+
+.input-only {
+  margin-left: 1.1rem;
+  font-family: var(--ff-1);
+  font-weight: 600;
+  font-size: 1rem;
+  color: #828282;
+  border: transparent;
+  width: 100%;
+}
+
+#name {
+  color: #333333;
+}
+
+.input-only:focus {
+  outline: none;
+  color: #333333;
+}
+
+.left-heading-2 {
+  font-family: var(--ff-1);
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333333;
+  margin-top: 3rem;
+}
+
+.two-input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.two-input-field {
+  margin-bottom: 1.2rem;
+  width: 45%;
+}
+
+.checkbox-without-icon {
+  display: flex;
+}
+
+.checkbox-only {
+  margin-right: 0.6rem;
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+.checkbox-text {
+  font-family: var(--ff-1);
+  font-weight: 600;
+  font-size: 0.7rem;
+  color: #333333;
+  align-self: center;
+}
+
+.btn-container {
+  margin: 0 auto;
+  text-align: end;
+}
+
+.submit-btn {
+  background: #f2994a;
+  border-radius: 12px;
+  padding: 1rem 2.3rem;
+  border: none;
+  font-family: var(--ff-1);
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  width: 35%;
+}
+
+.right-container {
+  flex: 50%;
+}
+
+.grey-box {
+  width: 75%;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+  padding: 2rem 1.5rem;
+  border-radius: 0.8rem;
+}
+
+.product-with-details {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+img {
+  width: 8.5rem;
+  height: 8.5rem;
+  margin-right: 1.2rem;
+  border-radius: 0.8rem;
+}
+
+.product-name {
+  font-family: var(--ff-1);
+  font-weight: 600;
+  font-size: 1rem;
+  color: #4e5150;
+  margin-bottom: 0.5rem;
+}
+
+.product-price {
+  display: flex;
+}
+
+.discount-price {
+  font-family: var(--ff-1);
+  font-weight: 600;
+  font-size: 1rem;
+  color: #f2994a;
+  margin-right: 1rem;
+}
+
+.actual-price {
+  font-family: var(--ff-1);
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #4e5150;
+  margin-top: 0.2rem;
+  text-decoration: line-through;
+}
+
+.product-quantity {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.3rem;
+  padding: 0.8rem;
+  border: 1px solid #828282;
+  border-radius: 0.8rem;
+  width: 8.5rem;
+}
+
+.remove,
+.add {
+  background-color: #e0e0e0;
+  border-radius: 0.3rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  text-align: center;
+  color: #828282;
+  font-family: var(--ff-1);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.number-of-product {
+  font-family: var(--ff-1);
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333333;
+}
+
+.total-price-container {
+  margin-top: 5rem;
+}
+
+hr {
+  color: #bdbdbd;
+  margin-bottom: 0.6rem;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.2rem;
+}
+
+.total-text,
+.total-price {
+  font-family: var(--ff-1);
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #333333;
+}
+
+/* Footer Section */
+
+.footer {
+  font-family: var(--ff-1);
+  font-size: 1rem;
+  color: #a9a9a9;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.footer > p {
+  margin: 0;
+}
+
+/* Responsive css */
+@media (max-width: 1070px) {
+  .main-container {
+    margin: 2rem 1.2rem 0.8rem 1.2rem;
+  }
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .content-container {
+    margin-top: 2.2rem;
+    flex-direction: column;
+  }
+
+  .left-container {
+    order: 2;
+  }
+
+  .right-container {
+    order: 1;
+    margin-bottom: 2.2rem;
+  }
+
+  .grey-box {
+    width: 100%;
+    padding: 1.9rem 1.4rem;
+  }
+
+  img {
+    width: 7.75rem;
+    height: 7.75rem;
+  }
+
+  .product-name {
+    font-size: 0.8rem;
+  }
+
+  .discount-price {
+    font-size: 0.9rem;
+    margin-right: 0.8rem;
+  }
+
+  .actual-price {
+    font-size: 0.6rem;
+  }
+
+  .product-quantity {
+    margin-top: 1.9rem;
+    padding: 0.8rem;
+    width: 7.75rem;
+  }
+
+  .remove,
+  .add {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .total-price-container {
+    margin-top: 4rem;
+  }
+
+  .total-text,
+  .total-price {
+    font-size: 0.9rem;
+  }
+
+  .left-heading {
+    font-size: 0.9rem;
+  }
+
+  .left-heading-2 {
+    font-size: 0.9rem;
+  }
+
+  .input-container {
+    margin-top: 0.7rem;
+  }
+
+  .input-field {
+    margin-bottom: 1rem;
+  }
+
+  label {
+    font-size: 0.6rem;
+  }
+
+  .icon {
+    font-size: 1.2rem;
+  }
+
+  .input-with-icon {
+    padding: 0.7rem;
+  }
+
+  .input-only {
+    margin-left: 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .checkbox-only {
+    margin-right: 0.5rem;
+  }
+
+  .checkbox-text {
+    font-size: 0.6rem;
+  }
+
+  .submit-btn {
+    width: 45%;
+  }
+}

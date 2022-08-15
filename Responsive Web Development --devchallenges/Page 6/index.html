@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Checkout Page</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="heading">Checkout</div>
+      <div class="content-container">
+        <div class="left-container">
+          <div class="left-heading">Contact infomation</div>
+          <form action="action">
+            <div class="input-container">
+              <div class="input-field">
+                <label for="email">Email</label>
+                <div class="input-with-icon">
+                  <span class="material-icons icon"> email </span>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="input-only"
+                    placeholder="Enter your email..."
+                    required
+                  />
+                </div>
+              </div>
+              <div class="input-field">
+                <label for="number">Phone</label>
+                <div class="input-with-icon">
+                  <span class="material-icons icon"> phone </span>
+                  <input
+                    type="number"
+                    id="number"
+                    name="number"
+                    class="input-only"
+                    placeholder="Enter your phone..."
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="left-heading-2">Shipping address</div>
+            <div class="input-container">
+              <div class="input-field">
+                <label for="name">Full name</label>
+                <div class="input-with-icon">
+                  <span class="material-icons icon"> account_circle </span>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="input-only"
+                    placeholder="Enter your name..."
+                    value="Rodney Cotton"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="input-field">
+                <label for="address">Address</label>
+                <div class="input-with-icon">
+                  <span class="material-icons icon"> home </span>
+                  <input
+                    type="text"
+                    id="address"
+                    name="address"
+                    class="input-only"
+                    placeholder="Your address.."
+                    required
+                  />
+                </div>
+              </div>
+              <div class="input-field">
+                <label for="city">City</label>
+                <div class="input-with-icon">
+                  <span class="material-icons icon"> location_city </span>
+                  <input
+                    type="text"
+                    id="city"
+                    name="city"
+                    class="input-only"
+                    placeholder="Your city.."
+                    required
+                  />
+                </div>
+              </div>
+              <div class="two-input">
+                <div class="two-input-field">
+                  <label for="country">Country</label>
+                  <div class="input-with-icon">
+                    <span class="material-icons icon"> public </span>
+                    <select
+                      name="country"
+                      id="country"
+                      class="input-only"
+                      required
+                    >
+                      <option value="Your country..">Your country..</option>
+                      <option value="india">India</option>
+                      <option value="usa">USA</option>
+                      <option value="UK">UK</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="two-input-field">
+                  <label for="postal">Postal code</label>
+                  <div class="input-with-icon">
+                    <span class="material-icons icon">
+                      markunread_mailbox
+                    </span>
+                    <input
+                      type="number"
+                      id="postal"
+                      name="postal"
+                      class="input-only"
+                      placeholder="Your postal code.."
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="input-field">
+                <div class="checkbox-without-icon">
+                  <input
+                    type="checkbox"
+                    id="checkbox"
+                    name="checkbox"
+                    class="checkbox-only"
+                    value="Save this information for next time"
+                    required
+                  />
+                  <label for="checkbox" class="checkbox-text"
+                    >Save this information for next time</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="btn-container">
+              <button type="submit" class="submit-btn">Continue</button>
+            </div>
+          </form>
+        </div>
+        <div class="right-container">
+          <div class="grey-box">
+            <div class="product-with-details">
+              <img src="./assets/photo1.png" alt="Product-1" />
+              <div class="product-details">
+                <div class="product-name">Vintage Backbag</div>
+                <div class="product-price">
+                  <div class="discount-price">$54.99</div>
+                  <div class="actual-price">$94.99</div>
+                </div>
+                <div class="product-quantity">
+                  <div class="remove" onclick="remove('p1')">-</div>
+                  <div class="number-of-product" id='p1'>1</div>
+                  <div class="add" onclick="add('p1')">+</div>
+                </div>
+              </div>
+            </div>
+            <div class="product-with-details">
+              <img src="./assets/photo2.png" alt="Product-2" />
+              <div class="product-details">
+                <div class="product-name">Levi Shoes</div>
+                <div class="product-price">
+                  <div class="discount-price">$74.99</div>
+                  <div class="actual-price">$124.99</div>
+                </div>
+                <div class="product-quantity">
+                  <div class="remove" onclick="remove('p2')">-</div>
+                  <div class="number-of-product" id='p2'>1</div>
+                  <div class="add" onclick="add('p2')">+</div>
+                </div>
+              </div>
+            </div>
+            <div class="total-price-container">
+              <hr />
+              <div class="total">
+                <div class="total-text">Shipping</div>
+                <div class="total-price">$19</div>
+              </div>
+              <hr />
+              <div class="total">
+                <div class="total-text">Total</div>
+                <div class="total-price">$148.98</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <p>created by farzigalib - devChallenges.io</p>
+      </div>
+    </div>
+
+    <script>
+      function add(productId) {
+        var count = parseInt(document.getElementById(productId).textContent);
+        let newVal = count + 1;
+        newVal = newVal > 0 ? newVal : 1;
+        document.getElementById(productId).textContent = newVal;
+      }
+      function remove(productId) {
+        var count = parseInt(document.getElementById(productId).textContent);
+        let newVal = count - 1;
+        newVal = newVal > 0 ? newVal : 1;
+        document.getElementById(productId).textContent = newVal;
+      }
+    </script>
+  </body>
+</html>
