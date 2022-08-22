@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Montserrat:wght@500&family=Poppins:wght@300;400;500;600&display=swap");
+
+:root {
+  --ff-1: "Heebo", sans-serif;
+  --ff-2: "Poppins", sans-serif;
+  --ff-3: "Montserrat", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.main-container {
+  background-color: #ffffff;
+}
+
+.white-container {
+  padding: 2.7rem 3.5rem;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container > p {
+  font-size: 2.2rem;
+  font-family: var(--ff-1);
+  font-weight: 800;
+  color: #333333;
+  margin: 0;
+}
+
+.menu,
+.close {
+  display: none;
+}
+
+.tabs {
+  display: flex;
+  list-style: none;
+}
+
+.tab {
+  margin: 0 2rem;
+}
+
+.lasttab {
+  margin-right: 0;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: var(--ff-2);
+  font-weight: 500;
+  color: #333333;
+}
+
+.viewport-container {
+  padding-left: 13.8rem;
+}
+
+.sub-heading {
+  margin-top: 6rem;
+  font-family: var(--ff-2);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #2d9cdb;
+  margin-bottom: 1rem;
+}
+
+.heading-1 {
+  font-family: var(--ff-2);
+  font-size: 3rem;
+  font-weight: 500;
+  color: #333333;
+}
+
+.hero-image {
+  width: 100%;
+  margin: 2.6rem 0;
+  height: 22rem;
+  border-radius: 0.9rem;
+}
+
+.discription {
+  margin: 2.6rem 0;
+  font-family: var(--ff-2);
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #4f4f4f;
+}
+
+label {
+  font-family: var(--ff-2);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #828282;
+  margin-bottom: 0.55rem;
+}
+
+.input-with-btn {
+  width: 21.8rem;
+  background-color: #f2f2f2;
+  border-radius: 0.8rem;
+  padding: 4px;
+  display: flex;
+}
+
+.input-only {
+  font-family: var(--ff-2);
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #828282;
+  border: transparent;
+  background-color: #f2f2f2;
+  margin-left: 1.4rem;
+  height: 3.5rem;
+  width: 70%;
+}
+
+.input-only:focus {
+  outline: none;
+  color: #333333;
+}
+
+.btn {
+  width: 30%;
+  background-color: #2d9cdb;
+  color: #f2f2f2;
+  font-family: var(--ff-2);
+  font-weight: 500;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 0.8rem;
+}
+
+/* need to check of both in one devices {when I open it on mobile it will work fine but something change in desktop} */
+
+/* Responsive css */
+@media (max-width: 1070px) {
+  .white-container {
+    padding: 0.9rem;
+  }
+
+  .menu {
+    display: block;
+    font-size: 2rem;
+  }
+
+  .close {
+    font-size: 2rem;
+  }
+
+  .tab-container {
+    display: none;
+    background-color: #ffffff;
+    position: absolute;
+    text-align: center;
+    right: 0;
+    left: 0;
+    top: 7rem;
+    height: 100vh;
+    z-index: 1;
+  }
+
+  .tabs {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .tab {
+    margin: 2rem auto;
+  }
+
+  .viewport-container {
+    padding-left: 2.5rem;
+  }
+
+  .sub-heading {
+    margin-top: 3rem;
+    font-size: 0.8rem;
+    margin-bottom: 0;
+  }
+
+  .heading-1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-image {
+    margin: 1rem 0;
+    height: 9rem;
+  }
+
+  .discription {
+    margin: 2rem 0;
+    font-size: 0.8rem;
+  }
+
+  label {
+    font-size: 0.6rem;
+  }
+
+  .input-with-btn {
+    width: 90%;
+  }
+
+  .input-only {
+    font-size: 0.9rem;
+    margin-left: 1.2rem;
+    height: 3rem;
+  }
+
+  .btn {
+    width: 30%;
+    font-size: 0.9rem;
+  }
+}

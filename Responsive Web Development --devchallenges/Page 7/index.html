@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>HomePage</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="white-container">
+        <div class="header-container">
+          <div class="logo-container">
+            <p>Edie</p>
+          </div>
+          <ul>
+            <div onclick="openMenu()">
+              <i class="material-icons menu" id="menuBtn"> menu </i>
+            </div>
+            <div onclick="closeMenu()">
+              <i class="material-icons close" id="closeBtn"> close </i>
+            </div>
+            <div class="tab-container" id="tab-view">
+              <ul class="tabs">
+                <li class="tab active"><a href="#">Home</a></li>
+                <li class="tab"><a href="#">Services</a></li>
+                <li class="tab"><a href="#">Our Works</a></li>
+                <li class="tab"><a href="#">Clients</a></li>
+                <li class="tab lasttab"><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </ul>
+        </div>
+        <div class="viewport-container">
+          <div class="sub-heading">Unhappy with your website?</div>
+          <div class="heading-1">
+            We create beautiful<br />fast web services
+          </div>
+        </div>
+        <img src="./assets/heroImage.jpg" alt="Team-Image" class="hero-image" />
+        <div class="viewport-container">
+          <div class="heading-1">Story, emotion<br />and purpose</div>
+          <div class="discription">
+            We help transform your ideas into real<br />world applications that
+            will outperform<br />your toughest competition and help you<br />achieve
+            your strategic goals in short<br />period of time.
+          </div>
+          <form>
+            <label for="email">Want us to contact you?</label>
+            <div class="input-with-btn">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="input-only"
+                placeholder="Email"
+                required
+              />
+              <button class="btn">Join</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
