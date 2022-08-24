@@ -27,21 +27,21 @@
             </div>
             <div class="tab-container" id="tab-view">
               <ul class="tabs">
-                <li class="tab active"><a href="#">Home</a></li>
-                <li class="tab"><a href="#">Services</a></li>
-                <li class="tab"><a href="#">Our Works</a></li>
-                <li class="tab"><a href="#">Clients</a></li>
-                <li class="tab lasttab"><a href="#">Contact</a></li>
+                <li class="tab active"><a href="#home">Home</a></li>
+                <li class="tab"><a href="#services">Services</a></li>
+                <li class="tab"><a href="#work">Our Works</a></li>
+                <li class="tab"><a href="#client">Clients</a></li>
+                <li class="tab lasttab"><a href="#contact">Contact</a></li>
               </ul>
             </div>
           </ul>
         </div>
-        <div class="viewport-container">
+        <section class="viewport-container" id="home">
           <div class="sub-heading">Unhappy with your website?</div>
           <div class="heading-1">
             We create beautiful<br />fast web services
           </div>
-        </div>
+        </section>
         <img src="./assets/heroImage.jpg" alt="Team-Image" class="hero-image" />
         <div class="viewport-container">
           <div class="heading-1">Story, emotion<br />and purpose</div>
@@ -65,7 +65,7 @@
             </div>
           </form>
         </div>
-        <div class="section">
+        <section class="section" id="services">
           <div class="heading-1 heading-2">
             We offer high <br />
             demand services
@@ -105,7 +105,137 @@
               <button class="card-btn">Get started</button>
             </div>
           </div>
+        </section>
+        <section class="section" id="work">
+          <div class="heading-1 heading-2">
+            Good design means <br />
+            good business
+          </div>
+          <div class="work-card-container">
+            <div class="work-card">
+              <img
+                src="./assets/smarthome.jpg"
+                alt="smarthome"
+                class="work-card-img"
+              />
+              <div class="work-card-sub-title">Full stack application</div>
+              <div class="work-card-title">Smart home dashboard</div>
+            </div>
+            <div class="work-card">
+              <img
+                src="./assets/onboard.png"
+                alt="onboard"
+                class="work-card-img"
+              />
+              <div class="work-card-sub-title">UX/UI design</div>
+              <div class="work-card-title">Onboard application</div>
+            </div>
+            <div class="work-card">
+              <img
+                src="./assets/booking.png"
+                alt="booking"
+                class="work-card-img"
+              />
+              <div class="work-card-sub-title">Mobile application</div>
+              <div class="work-card-title">Booking system</div>
+            </div>
+            <div class="work-card">
+              <img
+                src="./assets/juice-product.png"
+                alt="juice-product"
+                class="work-card-img"
+              />
+              <div class="work-card-sub-title">Front End applicati on</div>
+              <div class="work-card-title">Juice product homepage</div>
+            </div>
+          </div>
+          <div class="see-more">
+            <a href="#" class="see-more-link">see more</a>
+            <span class="material-icons arrow-icon"> arrow_right_alt </span>
+          </div>
+        </section>
+        <section class="section" id="client">
+          <div class="client-container">
+            <div class="left-container">
+              <div class="red-text">Meet the team</div>
+              <div class="left-container-heading">
+                We are chilled <br />
+                and a laidback <br />
+                team
+              </div>
+              <div class="left-container-disc">
+                Lorem ipsum dolor sit amet, <br />
+                consectetur adipiscing elit.
+              </div>
+            </div>
+            <div class="right-container">
+              <div class="right-left-container">
+                <img src="./assets/person3.png" alt="person3" class="person3" />
+              </div>
+              <div class="right-right-container">
+                <img src="./assets/person1.png" alt="person1" class="person1" />
+                <img src="./assets/person2.png" alt="person2" class="person2" />
+              </div>
+            </div>
+          </div>
+          <div class="client-qoute">
+            “Fast and outstanding resutls. Edie understands their customer’s
+            needs. They have a young and talented team.”
+          </div>
+          <div class="client-with-name">
+            <img src="./assets/person4.png" alt="person4" class="person4" />
+            <div class="name-with-company">
+              <div class="name">Carlos Tran</div>
+              <div class="company">The Decorate Gatsby</div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="footer-container" id="contact">
+        <div class="all-tab">
+          <ul class="footer-tab">
+            <li><a class="footer-link" href="#home">Home</a></li>
+            <li><a class="footer-link" href="#services">Services</a></li>
+            <li><a class="footer-link" href="#work">Our Works</a></li>
+            <li><a class="footer-link" href="#client">Clients</a></li>
+            <li><a class="footer-link" href="#contact">Contact</a></li>
+          </ul>
         </div>
+        <div class="name-with-media">
+          <div class="logo-container foo">
+            <p>Edie</p>
+          </div>
+          <div class="social-media">
+            <a href="#" class="instagram"
+              ><img src="./assets/instagram.svg" alt="instagram"
+            /></a>
+            <a href="#" class="linkedin"
+              ><img src="./assets/linkedin.svg" alt="linkedin"
+            /></a>
+            <a href="#" class="twitter"
+              ><img src="./assets/twitter.svg" alt="twitter"
+            /></a>
+          </div>
+        </div>
+        <div class="input-field">
+          <form>
+            <label for="email">Want us to contact you?</label>
+            <div class="input-with-btn">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="input-only"
+                placeholder="Email"
+                required
+              />
+              <button class="btn">Join</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <div class="footer">
+        <p>created by <strong>farzigalib</strong> - devChallenges.io</p>
       </div>
     </div>
 

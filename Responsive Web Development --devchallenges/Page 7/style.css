@@ -116,6 +116,7 @@ label {
   border-radius: 0.8rem;
   padding: 4px;
   display: flex;
+  margin-top: 0.5rem;
 }
 
 .input-only {
@@ -232,6 +233,210 @@ label {
   color: #ffffff;
 }
 
+.work-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 0.8rem;
+}
+
+.work-card:nth-child(2n + 1) {
+  margin-top: 11rem;
+}
+
+.work-card-img {
+  border-radius: 0.8rem;
+  width: 100%;
+  height: 34rem;
+}
+
+.work-card-sub-title {
+  font-family: var(--ff-2);
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #828282;
+  margin-top: 1.2rem;
+}
+
+.work-card-title {
+  font-family: var(--ff-2);
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #333333;
+}
+
+.see-more {
+  text-align: right;
+  align-items: center;
+}
+
+.see-more-link {
+  font-family: var(--ff-2);
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #2d9cdb;
+}
+
+.arrow-icon {
+  vertical-align: sub;
+  color: #2d9cdb;
+}
+
+.client-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-container {
+  align-self: center;
+}
+
+.red-text {
+  font-family: var(--ff-2);
+  font-weight: 500;
+  color: #eb5757;
+  font-size: 1.1rem;
+}
+
+.left-container-heading {
+  font-family: var(--ff-2);
+  font-weight: 500;
+  color: #333333;
+  font-size: 2.1rem;
+}
+
+.left-container-disc {
+  font-family: var(--ff-2);
+  font-weight: 400;
+  color: #4f4f4f;
+  font-size: 1rem;
+}
+
+.right-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-left-container {
+  align-self: center;
+  margin-right: 1.5rem;
+}
+
+.right-right-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.person3,
+.person2,
+.person1 {
+  width: 100%;
+  border-radius: 1.5rem;
+}
+
+.person3 {
+  height: 20rem;
+}
+
+.person2 {
+  height: 18.7rem;
+  margin-top: 0.8rem;
+}
+
+.person1 {
+  width: 90%;
+  height: 16.25rem;
+  margin-bottom: 0.8rem;
+}
+
+.client-qoute {
+  margin-top: 12.25rem;
+  font-family: var(--ff-2);
+  font-weight: 500;
+  font-size: 2.1rem;
+  color: #333333;
+  margin-right: 18rem;
+}
+
+.client-with-name {
+  display: flex;
+  align-items: center;
+  margin-top: 2.8rem;
+}
+
+.person4 {
+  width: 5.12rem;
+  height: 5.12rem;
+  margin-right: 1.9rem;
+  border-radius: 0.8rem;
+}
+
+.name {
+  font-family: var(--ff-2);
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #333333;
+}
+
+.company {
+  font-family: var(--ff-2);
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #828282;
+  margin-top: 0.8rem;
+}
+
+/* Footer Section */
+
+.footer-container {
+  background-color: #100e1d;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2.8rem;
+  color: #ffffff;
+  margin-top: 4rem;
+}
+
+.footer-tab {
+  list-style: none;
+  line-height: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-link {
+  font-family: var(--ff-2);
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.foo > p {
+  color: #ffffff;
+}
+
+.linkedin {
+  margin: 0 0.2rem;
+}
+
+.input-field > form > label {
+  color: #ffffff;
+}
+
+.footer {
+  font-family: var(--ff-3);
+  font-size: 1rem;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 6rem;
+  background-color: #100e1d;
+  padding-bottom: 1rem;
+}
+
+.footer > p {
+  margin: 0;
+}
+
 /* need to check of both in one devices {when I open it on mobile it will work fine but something change in desktop} */
 
 /* Responsive css */
@@ -311,5 +516,134 @@ label {
   .btn {
     width: 30%;
     font-size: 0.9rem;
+  }
+
+  .heading-2 {
+    font-size: 1.5rem;
+    margin: 0 0 0 3rem;
+  }
+
+  .section {
+    margin: 6.3rem 0 0 0;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 95%;
+    margin: 0.5rem auto;
+  }
+
+  .work-card-container {
+    justify-content: center;
+  }
+
+  .work-card:nth-child(2n + 1) {
+    margin-top: 0;
+  }
+
+  .work-card-img {
+    margin-top: 2.2rem;
+    height: 25rem;
+  }
+
+  .work-card-sub-title {
+    font-size: 0.8rem;
+    margin-top: 0.8rem;
+  }
+
+  .work-card-title {
+    font-size: 1.1rem;
+  }
+
+  .see-more {
+    text-align: left;
+    margin-top: 1.6rem;
+  }
+
+  .see-more-link {
+    font-size: 1.2rem;
+  }
+
+  .arrow-icon {
+    vertical-align: middle;
+  }
+
+  .client-container {
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .left-container {
+    align-self: flex-start;
+    margin-bottom: 2rem;
+  }
+
+  .right-left-container {
+    margin-right: 0.5rem;
+  }
+
+  .person3,
+  .person2,
+  .person1 {
+    width: 100%;
+    border-radius: 1.5rem;
+  }
+
+  .person3 {
+    height: 11rem;
+  }
+
+  .person2 {
+    height: 10.5rem;
+    margin-top: 0.8rem;
+  }
+
+  .person1 {
+    width: 90%;
+    height: 9rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .client-qoute {
+    margin-top: 6.25rem;
+    font-size: 1.5rem;
+    margin-right: 0;
+  }
+
+  .client-with-name {
+    margin-top: 1.2rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 2rem;
+    padding-left: 2.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .name-with-media {
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+  }
+
+  .foo > p {
+    color: #ffffff;
+  }
+
+  .linkedin {
+    margin: 0 0.2rem;
+  }
+
+  .input-field > form > label {
+    color: #ffffff;
+  }
+
+  .footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
