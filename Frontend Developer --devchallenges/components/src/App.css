@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans+JP:wght@500&family=Poppins:wght@500;600&family=Ubuntu+Mono&display=swap");
+
+:root {
+  --ff-1: "Montserrat", sans-serif;
+  --ff-2: "Noto Sans JP", sans-serif;
+  --ff-3: "Poppins", sans-serif;
+  --ff-4: "Ubuntu Mono", monospace;
+  --c-1: #090f31;
+  --c-2: #f7542e;
+  --c-3: #9e9e9e;
+  --c-4: #fafbfd;
+}
+
+.main-container {
+  display: flex;
+}
+
+.sidebar-container {
+  height: 100vh;
+  background-color: var(--c-4);
+  width: 14.8rem;
+  position: fixed;
+}
+
+.heading {
+  display: flex;
+  font-family: var(--ff-3);
+  font-weight: 600;
+  font-size: 0.75;
+  line-height: 1.2rem;
+  margin-top: 3rem;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.dev {
+  color: var(--c-2);
+}
+
+.io {
+  color: var(--c-1);
+}
+
+.nav-list {
+  list-style: none;
+  margin-top: 7.6rem;
+}
+
+.nav-link {
+  font-family: var(--ff-2);
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  color: var(--c-3);
+  text-decoration: none;
+}
+
+.active {
+  color: var(--c-1);
+}
+
+.nav-title {
+  margin-top: 1.56rem;
+}
+
+.content-container {
+  position: absolute;
+  margin-left: 15rem;
+}
