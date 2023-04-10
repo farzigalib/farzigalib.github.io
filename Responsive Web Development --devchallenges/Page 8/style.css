@@ -554,24 +554,13 @@ a {
   }
 
   .project-card-container {
-    overflow: auto;
-    scroll-snap-type: x mandatory;
-    gap: 1.5rem 0.5rem;
-    flex-wrap: nowrap;
+    gap: 1.5rem 0;
     justify-content: center;
-    flex-shrink: 0;
-    scroll-snap-align: start;
-  }
-
-  .project-card-container::-webkit-scrollbar {
-    display: none;
   }
 
   .project-card {
     padding: 1rem 1rem 1.5rem 1rem;
     width: 100%;
-    flex-shrink: 0;
-    scroll-snap-align: start;
   }
 
   .project-heading {
