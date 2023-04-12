@@ -9,6 +9,7 @@
   --c-2: #f7542e;
   --c-3: #9e9e9e;
   --c-4: #fafbfd;
+  --c-5: #4f4f4f;
 }
 
 .main-container {
@@ -66,4 +67,17 @@
 .content-container {
   position: absolute;
   margin-left: 15rem;
+}
+
+.main-content-container {
+  padding-left: 5.6rem;
+  padding-top: 3.3rem;
+}
+
+header {
+  font-family: var(--ff-3);
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: var(--c-5);
 }
