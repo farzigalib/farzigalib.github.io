@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
 
 const Typography = () => {
-    return (
-        <div>Typography</div>
-    )
-}
+  return (
+    <main className="main-content-container">
+      <header>Typography</header>
+      <div className="content-section">Coming soon!</div>
+    </main>
+  );
+};
 
-export default Typography
+export default Typography;

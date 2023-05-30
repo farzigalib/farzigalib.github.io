@@ -20,6 +20,10 @@
   --c-12: rgba(41, 98, 255, 0.2);
 }
 
+body::-webkit-scrollbar {
+  display: block;
+}
+
 .main-container {
   display: flex;
 }
@@ -29,6 +33,11 @@
   background-color: var(--c-4);
   width: 14.8rem;
   position: fixed;
+  overflow-y: auto;
+}
+
+.sidebar-container::-webkit-scrollbar {
+  display: block;
 }
 
 .heading {
@@ -80,6 +89,7 @@
 .main-content-container {
   padding-left: 5.6rem;
   padding-top: 3.3rem;
+  padding-bottom: 3rem;
 }
 
 header {
@@ -96,7 +106,6 @@ header {
 
 .block {
   display: flex;
-  /* justify-content: space-between; */
   margin-bottom: 2.8rem;
 }
 
@@ -129,8 +138,6 @@ header {
 }
 
 .btn-click {
-  width: 8rem;
-  height: 3rem;
   border: none;
   font-family: var(--ff-2);
   font-weight: 500;

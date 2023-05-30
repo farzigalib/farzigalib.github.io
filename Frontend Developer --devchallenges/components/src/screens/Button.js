@@ -100,7 +100,7 @@ const Button = () => {
             color={"primary"}
           />
           <CustomButton
-            btnHeading={"<Button size=”md” />"}
+            btnHeading={"<Button size=”lg” />"}
             classNameWithoutHover={"default"}
             size="lg"
             color={"primary"}

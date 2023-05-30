@@ -5,7 +5,7 @@ const CustomButton = ({
   marginLeft = true,
   btnHeading,
   btnText = "Default",
-  size,
+  size = "lg",
   color,
   isHover = false,
   disabled = false,
@@ -73,8 +73,10 @@ const CustomButton = ({
         style={{
           cursor: "pointer",
           color: textColor,
-          width: size === "sm" ? 73 : size === "md" ? 81 : size === "lg" ?? 93,
-          height: size === "sm" ? 32 : size === "md" ? 36 : size === "lg" ?? 42,
+          width:
+            size === "sm" ? 73 : size === "md" ? 81 : size === "lg" && "8rem",
+          height:
+            size === "sm" ? 32 : size === "md" ? 36 : size === "lg" && "3rem",
           background: isHover
             ? !isHovering
               ? background
