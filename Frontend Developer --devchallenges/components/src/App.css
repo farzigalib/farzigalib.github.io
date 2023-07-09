@@ -18,6 +18,8 @@
   --c-10: #828282;
   --c-11: #3d5afe;
   --c-12: rgba(41, 98, 255, 0.2);
+  --c-13: #2962ff;
+  --c-14: #d32f2f;
 }
 
 body::-webkit-scrollbar {
@@ -217,4 +219,56 @@ header {
 .with-shadow {
   background-color: var(--c-1);
   color: var(--c-0);
+}
+
+.input-label {
+  font-family: var(--ff-2);
+  font-size: 0.8rem;
+}
+
+.input-field {
+  border: 1px solid var(--c-10);
+  padding: 0 0.8rem;
+  outline: none;
+  font-family: var(--ff-2);
+}
+
+.input-field:hover {
+  border: 1px solid var(--c-6);
+}
+
+.input-field:focus {
+  border: 1px solid var(--c-13);
+}
+
+.input-field:disabled {
+  border: 1px solid var(--c-7);
+}
+
+.input-field-hover {
+  border: 1px solid var(--c-6);
+  padding: 0 0.8rem;
+  outline: none;
+  font-family: var(--ff-2);
+}
+
+.input-field-focused {
+  border: 1px solid var(--c-13);
+  padding: 0 0.8rem;
+  outline: none;
+  font-family: var(--ff-2);
+}
+
+.input-with-error {
+  border: 1px solid var(--c-14);
+  padding: 0 0.8rem;
+  outline: none;
+  font-family: var(--ff-2);
+}
+
+.hepler-text {
+  color: var(--c-10);
+  font-family: var(--ff-2);
+  font-size: 0.7rem;
+  margin-top: 4px;
 }
